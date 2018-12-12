@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,400i|Alegreya+Sans:400,400i|Alegreya:400i,900');
+
+
+html {
+	margin: 0;
+	padding: 0;
+}
+body { 
+  font-family: 'Alegreya Sans SC', Verdana, Tahoma, sans-serif; 
+  margin: 0; 
+  padding: 0;
+  
+}
+
+header {
+  height: 25vh;
+  background: linear-gradient(aquamarine, cornflowerblue), no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  position: relative;
+  border: 1px ridge #ddd;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  margin-top: 10px;
+  text-align: center;
+  color: #F9F9F9;
+  text-shadow: 1px 1px 1px #a2a2a2;  
+ 
+  
+  }
+footer {
+        background: linear-gradient(aquamarine, cornflowerblue), no-repeat;
+       text-align: center;
+       color: #F9F9F9;
+       height: 5vh;
+       border-radius: 25px;
+}
+
+
+main {
+    text-align: center;
+}
+#globe{
+   width:50px; 
+    margin:auto; 
+    border-radius:50%;
+    
+}
+#place {
+     background: radial-gradient(aquamarine, cornflowerblue), no-repeat;
+     margin-top: 1%;   
+    border-radius: 25px;
+    width: 200px;
+    height: 100px;
+    padding: 25px;
+    text-align: center;
+}
+
+
+  .carousel .carousel-item {
+    height: 300px;
+      
+}
+.carousel .carousel-item img {
+     margin: 0 auto;
+      min-height: 300px; 
+    border: 5px ridge;
+      
+}
+.color{
+    color: #0F98F2;
+            
+        }
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px; 
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+/*  border-bottom: 1px ridge;*/
+  min-height: 400px; 
+}
+
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+
+/*
+.linkBtn {
+    display: inline;
+    background: radial-gradient(aquamarine, cornflowerblue), no-repeat;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    padding: 25px;
+    text-align: center;
+    
+}
+*/
+.center {text-align: center;}
+
+nav a{
+    display:inline-block;
+	margin:10px;
+    padding:2px;
+	background :radial-gradient(aquamarine, cornflowerblue), no-repeat;   
+     background-blend-mode: multiply;
+    background-size: cover;
+   position: relative;
+/*    opacity: 0.2;*/
+	width:18%;
+    border-radius:25px;
+    text-decoration: none;
+     color: #000000;
+    
+  }
+nav > a:hover {
+  background: #1a237e;
+  color: #ffffff;
+    text-decoration: none;
+}
+
+btnLink {
+    background :radial-gradient(aquamarine, cornflowerblue), no-repeat; 
+    
+}
+.placeholder {
+    height: 50px;
+}
+@media only screen and (min-width: 1024px) {
+@import "compass/css3";
+
+$height-footer: 60px;
+
+html {
+  min-height: 100%;
+  position: relative;
+    }
+  body {
+    margin-bottom: $height-footer;
+  }
+  #footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: $height-footer;
+    background-color: #f5f5f5;
+    }
+    .footer-block {
+      margin: 20px 0;
+    }
+  }
+}
+
+}

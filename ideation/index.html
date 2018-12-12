@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Intelligent Tourist Guide</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div class="container">
+        <header class="jumbotron">
+            <h1>Intelligent Tourist Guide</h1>
+            <img src="globe.png" alt="Globe" id="globe">
+        </header>
+        <main>
+            <div col="12">
+                <h3>Welcome!</h3>
+            
+            </div>
+          
+            
+            
+            
+              <div class="col">
+               <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="7000">
+                   <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid"
+                                src="boga_lake.jpg" alt="Boga Lake">
+                           
+                        </div>
+                        <div class="carousel-item">
+                              <img class="d-block img-fluid"
+                              src="boga_2.jpg" alt="Boga Lake 2">
+                            
+                        </div>
+                       
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                      
+                    </ol>
+                  
+                   
+
+            </div>
+
+            </div>
+           
+            <div class="col-12 col-sm align-self-center">
+             <select class="badge badge-pill" id="place" name="Place"> 
+                <option value ="#">Select a Place</option>                  
+                <option value="location.html">Cox's Bazar</option> 
+                <option value="location.html">Chittagong</option> 
+                <option value="location.html">Cumana, Venezuela</option> 
+
+            </select> 
+            </div>
+            <div class="col-12">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac fringilla enim. Cras vitae justo quis purus ultrices blandit ac quis enim. In eget faucibus ipsum, in vulputate sem. Praesent nisi justo, ultrices at nunc sit amet, mollis luctus enim. Aenean cursus vehicula purus at ornare. Nunc ut ante sed ligula pharetra interdum. Praesent mattis non justo cursus mollis. Curabitur non tempor libero.</p>
+            
+            <p>Morbi lectus dui, dictum non scelerisque in, ultrices id massa. Nunc erat quam, commodo ut ligula id, fermentum ultrices mauris. Nunc vel luctus dolor. Nunc risus tellus, tempor eget ultrices efficitur, varius ac lorem. Curabitur placerat erat vitae sollicitudin elementum. Mauris vel lectus diam. Ut vitae quam odio. Aenean suscipit elit ac consectetur suscipit. Sed at massa at elit volutpat imperdiet sed vitae ligula. Etiam ac sem tortor. Sed tempor, sem id vulputate aliquam, nulla eros iaculis purus, non interdum est elit id lacus. Nunc rhoncus velit tortor, quis ultricies est ultrices id. Praesent lobortis vel justo non scelerisque. Fusce venenatis leo congue, pellentesque lectus eu, faucibus ipsum. Sed et nibh in augue pretium tempus. Ut luctus ut tellus vel dignissim.</p>
+                
+                
+                   <p>Morbi lectus dui, dictum non scelerisque in, ultrices id massa. Nunc erat quam, commodo ut ligula id, fermentum ultrices mauris. Nunc vel luctus dolor. Nunc risus tellus, tempor eget ultrices efficitur, varius ac lorem. Curabitur placerat erat vitae sollicitudin elementum. Mauris vel lectus diam. Ut vitae quam odio. Aenean suscipit elit ac consectetur suscipit. Sed at massa at elit volutpat imperdiet sed vitae ligula. Etiam ac sem tortor. Sed tempor, sem id vulputate aliquam, nulla eros iaculis purus, non interdum est elit id lacus. Nunc rhoncus velit tortor, quis ultricies est ultrices id. Praesent lobortis vel justo non scelerisque. Fusce venenatis leo congue, pellentesque lectus eu, faucibus ipsum. Sed et nibh in augue pretium tempus. Ut luctus ut tellus vel dignissim.</p>
+                </div>
+        </main>
+        
+        
+        
+        
+       <footer>
+            
+            <p> Copyright  © 2018 Intelligent Tourist Guide</p>
+            
+        </footer> 
+         </div>    
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <script>
+            $("select").click(function() {
+              var open = $(this).data("isopen");
+              if(open) {
+                window.location.href = $(this).val()
+              }
+              //set isopen to opposite so next time when use clicked select box
+              //it wont trigger this event
+              $(this).data("isopen", !open);
+            });
+        </script>
+           
+    </body>
+</html>
