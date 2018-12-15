@@ -14,7 +14,8 @@
                 }
             });
         });
-         
+    /*    
+    Uglifyjs doesn't support ES6
 
     <!-- login modal -->
 
@@ -28,4 +29,12 @@
          $("#reserveButton").click(() => {
             $("#reserveModal").modal('toggle');
         });
-  
+  */
+
+$("#loginBtn").click(function () {
+    $("#loginModal").modal('toggle');
+});
+
+$("#reserveButton").click(function () {
+    $("#reserveModal").modal('toggle');
+});
